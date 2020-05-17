@@ -1,0 +1,104 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class $DataClass$ : BaseLangData
+{	
+	public $ExcelData$[] $ExcelDataName$ = new $ExcelData$[0];
+	
+	// XML data
+    private string filename = $ExcelDataNameString$;
+    private string TITLE = $TitleName$;
+    private string SUBTITLE = $SubTitle$;
+    
+    public $DataClass$()
+    {
+        LoadData();
+    }
+    
+    public override string GetIconPath() { return "Icons/FIXME/"; }
+    public string GetPrefabPath() { return "Prefabs/FIXME/"; }
+    
+    public void LoadData()
+    {
+        ArrayList data = XMLHandler.LoadXML(dir + filename);
+
+        if (data.Count > 0)
+        {
+            foreach (Hashtable entry in data)
+            {
+                if (entry[XMLHandler.NODE_NAME] as string == TITLE)
+                {
+                    if (entry.ContainsKey(XMLHandler.NODES))
+                    {
+                        ArrayList subs = entry[XMLHandler.NODES] as ArrayList;
+                        icon = new string[subs.Count];
+                        $ExcelDataName$ = new $ExcelData$[subs.Count];
+
+                        foreach (Hashtable val in subs)
+                        {
+                            if (val[XMLHandler.NODE_NAME] as string == SUBTITLE)
+                            {
+                                int i = int.Parse((string)val["id"]);
+                                icon[i] = "";
+
+                                $ExcelDataName$[i] = new $ExcelData$();                                
+
+								//coding here
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            //this.AddItem("Default Data", "");
+        }
+    }
+    
+    
+    public void SaveData()
+    {
+        if (name.Length == 0) return;
+        ArrayList data = new ArrayList();
+        ArrayList subs = new ArrayList();
+        Hashtable sv = new Hashtable();
+
+        sv.Add(XMLHandler.NODE_NAME, TITLE);
+
+        for (int i = 0; i < name[0].Count(); i++)
+        {
+            Hashtable ht = new Hashtable();
+            ArrayList s = new ArrayList();
+
+            ht.Add(XMLHandler.NODE_NAME, SUBTITLE);
+            ht.Add("id", i.ToString());
+            
+            //coding here
+            
+            ht.Add(XMLHandler.NODES, s);
+            subs.Add(ht);
+        }
+        sv.Add(XMLHandler.NODES, subs);
+        data.Add(sv);
+        XMLHandler.SaveXML(dir, filename, data);
+    }
+    
+    public override void Copy(int index)
+    {
+        base.Copy(index);
+        
+        //coding here
+
+    }
+    
+    
+	public void AddItem()
+	{
+		//coding here
+	}
+
+}
+

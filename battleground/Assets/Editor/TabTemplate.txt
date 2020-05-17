@@ -1,0 +1,83 @@
+﻿using UnityEditor;
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class $TabClass$ : BaseTab
+{	
+	private GameObject tmpPrefab;
+	private AudioClip tmpAudio;  
+	
+	public $TabClass$(ProjectWindow pw) : base(pw)
+	{
+		this.Reload();
+	}
+	
+	new public void Reload()
+	{
+		base.Reload();
+		this.tmpPrefab = null;
+		this.tmpAudio = null;
+	}
+
+	public void ShowTab()
+	{
+		int tmpSelection = selection;
+		EditorGUILayout.BeginVertical();
+		
+		// buttons
+		EditorGUILayout.BeginHorizontal();
+		if(GUILayout.Button("Add Data", GUILayout.Width(mWidth2)))
+		{
+			//coding here
+			$DataHolderDatas$.AddItem();
+			selection = $DataHolderDatas$.GetDataCount()-1;
+			GUI.FocusControl ("ID");
+		}
+		if(selection >= 0)
+		{
+			if(this.ShowCopyButton($DataHolderDatas$))
+			{
+				
+			}
+		}
+		if($DataHolderDatas$.GetDataCount() > 1 && selection >= 0)
+		{
+			if(this.ShowRemButton("Remove Item", $DataHolderDatas$))
+			{
+				pw.RemoveItem(selection);
+			}
+		}
+		this.CheckSelection($DataHolderDatas$);
+		EditorGUILayout.EndHorizontal();
+
+        
+        this.AddItemList($DataHolderDatas$);
+        
+		
+		// element settings
+		EditorGUILayout.BeginVertical();
+		SP2 = EditorGUILayout.BeginScrollView(SP2);
+		if($DataHolderDatas$.GetDataCount() > 0)
+		{
+			EditorGUILayout.BeginHorizontal();
+			this.AddID("Data ID");
+
+            //$DataHolderData$(selection).networkID = $DataHolderDatas$.GetItemNetID(selection);
+            //EditorGUILayout.LabelField("Network ID : " + $DataHolderData$(selection).networkID);
+			this.AddMultiLangIcon("Item Name", $DataHolderDatas$);
+			
+			EditorGUILayout.BeginVertical("box");
+			fold2 = EditorGUILayout.Foldout(fold2, "Data Settings");
+			if(fold2)
+			{
+				this.Separate();
+			}
+			EditorGUILayout.EndVertical();
+			
+			EditorGUILayout.EndVertical();
+			EditorGUILayout.EndHorizontal();
+		}
+		this.EndTab();
+	}
+}
