@@ -5,4 +5,5 @@ using System.Collections.Generic;
 public enum EffectList
 {
 	None = -1,
+	
 }
