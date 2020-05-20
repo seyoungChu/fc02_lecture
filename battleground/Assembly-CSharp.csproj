@@ -68,6 +68,8 @@
     <Compile Include="Assets\1.Scripts\Common\GlobalDefine.cs" />
     <Compile Include="Assets\1.Scripts\Common\TagAndLayer.cs" />
     <Compile Include="Assets\1.Scripts\GameData\BaseData.cs" />
+    <Compile Include="Assets\1.Scripts\GameData\EffectClip.cs" />
+    <Compile Include="Assets\1.Scripts\GameData\EffectData.cs" />
     <Compile Include="Assets\1.Scripts\GameData\EffectList.cs" />
     <Compile Include="Assets\1.Scripts\GameData\SoundList.cs" />
     <Compile Include="Assets\1.Scripts\Helper\Interpolator.cs" />
