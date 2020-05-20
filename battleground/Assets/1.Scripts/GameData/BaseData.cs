@@ -20,7 +20,7 @@ public class BaseData : ScriptableObject
 
         if (this.names != null)
         {
-            retValue = this.name.Length;
+            retValue = this.names.Length;
         }
 
         return retValue;
