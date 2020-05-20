@@ -72,6 +72,7 @@
     <Compile Include="Assets\1.Scripts\GameData\EffectData.cs" />
     <Compile Include="Assets\1.Scripts\GameData\EffectList.cs" />
     <Compile Include="Assets\1.Scripts\GameData\SoundClip.cs" />
+    <Compile Include="Assets\1.Scripts\GameData\SoundData.cs" />
     <Compile Include="Assets\1.Scripts\GameData\SoundList.cs" />
     <Compile Include="Assets\1.Scripts\Helper\Interpolator.cs" />
     <Compile Include="Assets\1.Scripts\Manager\DataManager.cs" />
