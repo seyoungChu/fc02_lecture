@@ -36,6 +36,7 @@ public class SoundTool : EditorWindow
         EditorGUILayout.BeginVertical();
         {
             UnityObject source = soundSource;
+            SoundClip sound = soundData.soundClips[selection];
             EditorHelper.EditorToolTopLayer(soundData, ref selection, ref source, uiWidthMiddle);
             soundSource = (AudioClip)source;
 
@@ -54,7 +55,7 @@ public class SoundTool : EditorWindow
                             EditorGUILayout.BeginVertical();
                             {
                                 EditorGUILayout.Separator();
-                                SoundClip sound = soundData.soundClips[selection];
+                                
                                 EditorGUILayout.LabelField("ID", selection.ToString(),
                                     GUILayout.Width(uiWidthLarge));
                                 soundData.names[selection] = EditorGUILayout.TextField("Name",
@@ -107,10 +108,10 @@ public class SoundTool : EditorWindow
                                         GUILayout.Label("Loop Step " + i, EditorStyles.boldLabel);
                                         if(GUILayout.Button("Remove", GUILayout.Width(uiWidthMiddle)))
                                         {
-                                            soundData.soundClips[selection].RemoveLoop();
+                                            soundData.soundClips[selection].RemoveLoop(i);
                                             return;
                                         }
-                                        SoundClip sound = soundData.soundClips[selection];
+                                        
                                         sound.checkTime[i] = EditorGUILayout.FloatField("check Time",
                                             sound.checkTime[i], GUILayout.Width(uiWidthMiddle));
                                         sound.setTime[i] = EditorGUILayout.FloatField("Set Time",

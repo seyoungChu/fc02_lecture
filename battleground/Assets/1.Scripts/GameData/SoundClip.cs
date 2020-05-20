@@ -20,7 +20,7 @@ public class SoundClip
     public AudioRolloffMode rolloffMode = AudioRolloffMode.Logarithmic;
     public float minDistance = 10000.0f;
     public float maxDistance = 50000.0f;
-    public float sparialBlend = 1.0f;
+    public float spartialBlend = 1.0f;
 
     public float fadeTime1 = 0.0f;
     public float fadeTime2 = 0.0f;
