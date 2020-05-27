@@ -81,6 +81,7 @@
     <Compile Include="Assets\1.Scripts\Manager\ResourceManager.cs" />
     <Compile Include="Assets\1.Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\1.Scripts\Player\BehaviourController.cs" />
+    <Compile Include="Assets\1.Scripts\Player\MoveBehaviour.cs" />
     <Compile Include="Assets\1.Scripts\Tool\BaseInteraction.cs" />
     <Compile Include="Assets\1.Scripts\Tool\EventHandler.cs" />
     <Compile Include="Assets\1.Scripts\Util\ArrayHelper.cs" />
