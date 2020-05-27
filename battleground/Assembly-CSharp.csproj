@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\1.Scripts\Camera\ThirdPersonOrbitCam.cs" />
     <Compile Include="Assets\1.Scripts\Common\AnimatorKey.cs" />
     <Compile Include="Assets\1.Scripts\Common\ButtonName.cs" />
     <Compile Include="Assets\1.Scripts\Common\GlobalDefine.cs" />
