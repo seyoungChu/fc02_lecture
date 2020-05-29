@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384ea9e51e785b24f8cfd410f27f752a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2067624007}
   pivotOffset: {x: 0, y: 1, z: 0}
   camOffset: {x: 0.4, y: 0.5, z: -2}
   smooth: 10
@@ -549,3 +549,9 @@ MonoBehaviour:
   playerCamera: {fileID: 1998449385}
   turnSmoothing: 0.06
   sprintFOV: 100
+--- !u!4 &2067624007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4675232436007860, guid: 325c2a72f558d4e419ec4f9ea74e54f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2067624000}
+  m_PrefabAsset: {fileID: 0}
