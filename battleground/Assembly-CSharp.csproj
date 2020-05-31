@@ -85,6 +85,7 @@
     <Compile Include="Assets\1.Scripts\Player\MoveBehaviour.cs" />
     <Compile Include="Assets\1.Scripts\Tool\BaseInteraction.cs" />
     <Compile Include="Assets\1.Scripts\Tool\EventHandler.cs" />
+    <Compile Include="Assets\1.Scripts\UI\WeaponUIManager.cs" />
     <Compile Include="Assets\1.Scripts\Util\ArrayHelper.cs" />
     <Compile Include="Assets\1.Scripts\Util\SingletonMonobehaviour.cs" />
     <Compile Include="Assets\1.Scripts\Util\VectorHelper.cs" />
