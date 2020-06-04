@@ -74,7 +74,7 @@ public class ShootBehaviour : GenericBehaviour
         changeWeaponTrigger = Animator.StringToHash(AnimatorKey.ChangeWeapon);
         shootingTrigger = Animator.StringToHash(AnimatorKey.Shooting);
         reloadBool = Animator.StringToHash(AnimatorKey.Reload);
-        weapons = new List<InteractiveWeapon>();
+        weapons = new List<InteractiveWeapon>(new InteractiveWeapon[3]);
         aimBehaviour = GetComponent<AimBehaviour>();
         bulletHoles = new List<GameObject>();
 
