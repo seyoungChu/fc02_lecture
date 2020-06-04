@@ -36,7 +36,7 @@ public class SoundTool : EditorWindow
         EditorGUILayout.BeginVertical();
         {
             UnityObject source = soundSource;
-            SoundClip sound = soundData.soundClips[selection];
+            
             EditorHelper.EditorToolTopLayer(soundData, ref selection, ref source, uiWidthMiddle);
             soundSource = (AudioClip)source;
 
@@ -44,6 +44,7 @@ public class SoundTool : EditorWindow
             {
                 EditorHelper.EditorToolListLayer(ref SP1, soundData, ref selection,
                     ref source, uiWidthMiddle);
+                SoundClip sound = soundData.soundClips[selection];
                 soundSource = (AudioClip)source;
 
                 EditorGUILayout.BeginVertical();
