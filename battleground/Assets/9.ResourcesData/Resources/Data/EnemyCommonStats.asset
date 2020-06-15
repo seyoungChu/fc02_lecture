@@ -18,7 +18,7 @@ MonoBehaviour:
   patrolWaitTime: 2
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8192
   angleDeadZone: 5
   speedDampTime: 0.4
   angularSpeedDampTime: 0.2
@@ -26,10 +26,10 @@ MonoBehaviour:
   aboveCoverHeight: 1.5
   coverMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1284
   shotMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 10513
   targetMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048

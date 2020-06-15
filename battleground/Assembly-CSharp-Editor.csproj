@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\1.Scripts\Enemy\Editor\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\1.Scripts\Enemy\Editor\SetupTagLayer.cs" />
     <Compile Include="Assets\1.Scripts\Helper\Editor\BaseInspector.cs" />
     <Compile Include="Assets\1.Scripts\Tool\Editor\EditorHelper.cs" />
     <Compile Include="Assets\1.Scripts\Tool\Editor\EffectTool.cs" />

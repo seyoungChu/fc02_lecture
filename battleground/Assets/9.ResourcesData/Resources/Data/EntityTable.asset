@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 8
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,4 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b2bacfda155bb4a948bd230b738841, type: 3}
   m_Name: EntityTable
   m_EditorClassIdentifier: 
-  sheets: []
+  sheets:
+  - name: sheet
+    list:
+    - ID: AK
+      AimOffset:
+      - -23
+      ChangeCoverChance: 30
+      WeaponType: LONG
+      BulletDamage: 9
+      ShotRateFactor: 1
+      ShotErrorRate: 0
+      Effect_MuzzleFlash: flash
+      Effect_Shot: tracer
+      Effect_Sparks: sparks
+      Effect_BulletHole: bulletHole
+    - ID: PISTOL
+      AimOffset:
+      - -15
+      ChangeCoverChance: 27
+      WeaponType: SHORT
+      BulletDamage: 10
+      ShotRateFactor: 0
+      ShotErrorRate: 0
+      Effect_MuzzleFlash: flash
+      Effect_Shot: tracer
+      Effect_Sparks: sparks
+      Effect_BulletHole: bulletHole
+    - ID: RIFLE
+      AimOffset:
+      - -23
+      ChangeCoverChance: 33
+      WeaponType: LONG
+      BulletDamage: 9
+      ShotRateFactor: 1
+      ShotErrorRate: 0
+      Effect_MuzzleFlash: flash
+      Effect_Shot: tracer
+      Effect_Sparks: sparks
+      Effect_BulletHole: bulletHole
