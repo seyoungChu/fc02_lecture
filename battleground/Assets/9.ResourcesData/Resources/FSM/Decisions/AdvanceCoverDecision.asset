@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: AdvanceCoverDecision
   m_EditorClassIdentifier: 
   waitRounds: 1
-  targetNear: {fileID: 0}
+  targetNear: {fileID: 11400000, guid: 79787fe1c163af141bf05570d8402086, type: 2}

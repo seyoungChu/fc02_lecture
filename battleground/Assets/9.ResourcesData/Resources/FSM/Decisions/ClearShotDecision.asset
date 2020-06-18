@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d71fb3c19f3fe1428ae40323eb67235, type: 3}
   m_Name: ClearShotDecision
   m_EditorClassIdentifier: 
-  targetNear: {fileID: 0}
+  targetNear: {fileID: 11400000, guid: 79787fe1c163af141bf05570d8402086, type: 2}

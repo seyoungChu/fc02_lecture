@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c3bf7a5b07aa0488363259981e2869, type: 3}
   m_Name: FocusMoveAction
   m_EditorClassIdentifier: 
-  clearShotDecision: {fileID: 0}
+  clearShotDecision: {fileID: 11400000, guid: b2ecb1cfe70662f498733cb7ac37fade, type: 2}

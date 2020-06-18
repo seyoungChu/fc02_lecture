@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d298cb8a76c45641be0f3f14173c47e, type: 3}
   m_Name: EngageDecision
   m_EditorClassIdentifier: 
-  isViewing: {fileID: 0}
-  targetNear: {fileID: 0}
+  isViewing: {fileID: 11400000, guid: 5a2afaa5d76f8bf4988c5c1cd05ab6b5, type: 2}
+  targetNear: {fileID: 11400000, guid: 79787fe1c163af141bf05570d8402086, type: 2}
