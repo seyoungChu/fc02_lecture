@@ -15,5 +15,20 @@ MonoBehaviour:
   actions:
   - {fileID: 11400000, guid: b1b7363f8e98be6428ca81d8f294e537, type: 2}
   - {fileID: 11400000, guid: 2a705d98c9ae13546b12eb0beeab9ca4, type: 2}
-  transitions: []
+  transitions:
+  - decision: {fileID: 11400000, guid: d428664995d687e4ba88d610df92bfd5, type: 2}
+    trueState: {fileID: 11400000, guid: cd308c2aeffbd9846b21adadadbe7817, type: 2}
+    falseState: {fileID: 11400000, guid: 4f01f21e973bc2e459c4d5cd181cd567, type: 2}
+  - decision: {fileID: 11400000, guid: 0e1cad8da3da1c645b7db7d8a9311b4a, type: 2}
+    trueState: {fileID: 11400000, guid: cd308c2aeffbd9846b21adadadbe7817, type: 2}
+    falseState: {fileID: 11400000, guid: 9a59d6067da732944a21ff4a886a47a3, type: 2}
+  - decision: {fileID: 11400000, guid: 79787fe1c163af141bf05570d8402086, type: 2}
+    trueState: {fileID: 11400000, guid: 9a59d6067da732944a21ff4a886a47a3, type: 2}
+    falseState: {fileID: 11400000, guid: cd308c2aeffbd9846b21adadadbe7817, type: 2}
+  - decision: {fileID: 11400000, guid: 55e3ed276f6552a45b75f73c3b521180, type: 2}
+    trueState: {fileID: 11400000, guid: 9a59d6067da732944a21ff4a886a47a3, type: 2}
+    falseState: {fileID: 11400000, guid: cd308c2aeffbd9846b21adadadbe7817, type: 2}
+  - decision: {fileID: 11400000, guid: 5482e87166fdc284da29d6e59d1cede2, type: 2}
+    trueState: {fileID: 11400000, guid: b568bd8c2139d124e955a3ec2676cea8, type: 2}
+    falseState: {fileID: 11400000, guid: cd308c2aeffbd9846b21adadadbe7817, type: 2}
   sceneGizmoColor: {r: 0.8773585, g: 0.25244746, b: 0.286903, a: 1}
