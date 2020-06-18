@@ -76,6 +76,9 @@
     <Compile Include="Assets\1.Scripts\Enemy\EnemyVariables.cs" />
     <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Action\Action.cs" />
     <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Decision\Decision.cs" />
+    <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Decision\FocusDecision.cs" />
+    <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Decision\HearDecision.cs" />
+    <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Decision\LookDecision.cs" />
     <Compile Include="Assets\1.Scripts\Enemy\StateMachine\State\State.cs" />
     <Compile Include="Assets\1.Scripts\Enemy\StateMachine\StateController.cs" />
     <Compile Include="Assets\1.Scripts\Enemy\StateMachine\Transition\Transition.cs" />
