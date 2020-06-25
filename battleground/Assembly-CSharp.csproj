@@ -127,6 +127,7 @@
     <Compile Include="Assets\1.Scripts\Tool\BaseInteraction.cs" />
     <Compile Include="Assets\1.Scripts\Tool\EventHandler.cs" />
     <Compile Include="Assets\1.Scripts\UI\BlinkHUD.cs" />
+    <Compile Include="Assets\1.Scripts\UI\CursorManager.cs" />
     <Compile Include="Assets\1.Scripts\UI\HealthHUD.cs" />
     <Compile Include="Assets\1.Scripts\UI\HurtHUD.cs" />
     <Compile Include="Assets\1.Scripts\UI\WeaponUIManager.cs" />

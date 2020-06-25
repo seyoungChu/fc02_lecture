@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Profiling;
 /// <summary>
 /// 현재 동작, 기본 동작, 오버라이딩 동작, 잠긴 동작, 마우스 이동값,
 /// 땅에 서있는지 , GenericBehaviour를 상속받은 동작들을 업데이트 시켜줍니다.
@@ -129,6 +129,7 @@ public class BehaviourController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Profiler.BeginSample("FixedUpdate_BehaviourController");
         bool isAnyBehaviourActive = false;
         if(behaviourLocked > 0 || overrideBehaviours.Count == 0)
         {
@@ -154,6 +155,7 @@ public class BehaviourController : MonoBehaviour
             myRigidbody.useGravity = true;
             Repositioning();
         }
+        Profiler.EndSample();
     }
     private void LateUpdate()
     {
