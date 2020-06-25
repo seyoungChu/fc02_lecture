@@ -50,8 +50,8 @@ public class EntityTableImporter : AssetPostprocessor {
 					cell = row.GetCell(4); p.ChangeCoverChance = (int)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(5); p.WeaponType = (cell == null ? "" : cell.StringCellValue);
 					cell = row.GetCell(6); p.BulletDamage = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(7); p.ShotRateFactor = (int)(cell == null ? 0 : cell.NumericCellValue);
-					cell = row.GetCell(8); p.ShotErrorRate = (int)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(7); p.ShotRateFactor = (float)(cell == null ? 0 : cell.NumericCellValue);
+					cell = row.GetCell(8); p.ShotErrorRate = (float)(cell == null ? 0 : cell.NumericCellValue);
 					cell = row.GetCell(9); p.Effect_MuzzleFlash = (cell == null ? "" : cell.StringCellValue);
 					cell = row.GetCell(10); p.Effect_Shot = (cell == null ? "" : cell.StringCellValue);
 					cell = row.GetCell(11); p.Effect_Sparks = (cell == null ? "" : cell.StringCellValue);

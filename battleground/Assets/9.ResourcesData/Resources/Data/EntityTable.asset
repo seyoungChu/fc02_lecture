@@ -21,8 +21,8 @@ MonoBehaviour:
       ChangeCoverChance: 30
       WeaponType: LONG
       BulletDamage: 9
-      ShotRateFactor: 1
-      ShotErrorRate: 0
+      ShotRateFactor: 1.6
+      ShotErrorRate: 0.06
       Effect_MuzzleFlash: flash
       Effect_Shot: tracer
       Effect_Sparks: sparks
@@ -33,8 +33,8 @@ MonoBehaviour:
       ChangeCoverChance: 27
       WeaponType: SHORT
       BulletDamage: 10
-      ShotRateFactor: 0
-      ShotErrorRate: 0
+      ShotRateFactor: 0.5
+      ShotErrorRate: 0.04
       Effect_MuzzleFlash: flash
       Effect_Shot: tracer
       Effect_Sparks: sparks
@@ -45,8 +45,8 @@ MonoBehaviour:
       ChangeCoverChance: 33
       WeaponType: LONG
       BulletDamage: 9
-      ShotRateFactor: 1
-      ShotErrorRate: 0
+      ShotRateFactor: 1.5
+      ShotErrorRate: 0.05
       Effect_MuzzleFlash: flash
       Effect_Shot: tracer
       Effect_Sparks: sparks

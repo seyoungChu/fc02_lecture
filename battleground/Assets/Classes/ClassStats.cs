@@ -22,8 +22,8 @@ public class ClassStats : ScriptableObject
 		public int ChangeCoverChance;
 		public string WeaponType;
 		public int BulletDamage;
-		public int ShotRateFactor;
-		public int ShotErrorRate;
+		public float ShotRateFactor;
+		public float ShotErrorRate;
 		public string Effect_MuzzleFlash;
 		public string Effect_Shot;
 		public string Effect_Sparks;
